@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-Mex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <!--Enlace al archivo de estilos CSS-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!--Contenedor principal-->
+    <div class="container">
+        <!--Panel izquierdo que contiene el título, el area de texto, una alerta y los botones-->   
+        <div class="left-panel">
+            <div class="Titulo">
+                <h1>Encriptador de Texto</h1>
+            </div>
+            <textarea id="inputTexto" placeholder="Ingresa el Texto Aquí"></textarea>
+            <div class="alert">
+                <p>!Solo ingresa letras minúsculas y sin acentos¡</p>
+            </div>
+            <div class="buttons">
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <!--Panel derecho que contiene el area de salida de texto y el boton copiar-->
+        <div class="right-panel">
+            <div class="output box">
+                <textarea id="outputTexto" placeholder="Ningún mensaje fue Desencriptado" readonly></textarea>
+            </div>
+            <button id="copiarTexto" class="copy-button" onclick="copiarTexto()">Copiar Texto</button> 
+        </div>
+        
+    </div>
+
+    <!--Pie de pagina con informacion del dearrollo-->
+    <footer class="footer">
+        <p>Desarrollado por <strong>Javier Corral</strong> para: <strong>Alura Latam</strong> </p>
+    </footer>
+
+    <!--Enlace al archivo JavaScript-->
+    <script src="app.js"></script>
+</body>
+
+</html>
